@@ -66,7 +66,7 @@ public class testAliyunOss {
         // 创建OSSClient实例。
         OSS ossClient = new OSSClientBuilder().build(endpoint, accessKeyId, accessKeySecret);
 
-        // 设置存储空间的访问权限为私有。
+        // 设置存储空间的访问权限为PublicRead。
         ossClient.setBucketAcl(bucketName, CannedAccessControlList.PublicRead);
 
         // 获取存储空间的访问权限。
